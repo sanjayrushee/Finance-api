@@ -8,11 +8,12 @@ const transactionSchema = new mongoose.Schema({
     description: { type: String }
 });
 
-const Transaction = mongoose.model('Transaction', transactionSchema);
 const categorySchema = new mongoose.Schema({
     name: { type: String, required: true },
     type: { type: String, required: true, enum: ['income', 'expense'] }
 });
 
+const Transaction = mongoose.model('Transaction', transactionSchema);
 const Category = mongoose.model('Category', categorySchema);
+
 export {Transaction, Category};

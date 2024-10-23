@@ -1,8 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-
-
+import { Transaction } from './schemas.js';
 dotenv.config();
 
 const app = express();
@@ -43,7 +42,7 @@ app.post('/transactions', async (request, response) => {
         await transaction.save();
         response.status(201).send(transaction);
     } catch (error) {
-        response.status(400).send({ error: 'Invalid input' });
+        response.status(400).send({ error: 'Invalid input or Server error' });
     }
 });
 
