@@ -155,12 +155,23 @@ http://localhost:3000
 Include screenshots of Postman or Thunder Client requests for each API endpoint to demonstrate their functionality :
 
 - POST /transactions
+  
 ![alt text](readme_img/image.png)
+
 - GET /transactions
+  
 ![alt text](readme_img/image-1.png)
+
 - PUT /transactions/
+  
 ![alt text](readme_img/image-3.png)
+
 - DELETE /transactions/
+  
 ![alt text](readme_img/image-4.png)
+
 - GET /
+  
 ![alt text](readme_img/image-2.png)
+
+
